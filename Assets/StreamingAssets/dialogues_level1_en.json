@@ -1,0 +1,44 @@
+{
+  "dialogues": [
+    {
+      "speaker": "HippieSpring",
+      "text": "Hey, little bouncy buddy! Where are you rushing to?",
+      "portrait": "HippieSpring"
+    },
+    {
+      "speaker": "Jumpy",
+      "text": "Umm... You seem a bit... high.",
+      "portrait": "Jumpy"
+    },
+    {
+      "speaker": "HippieSpring",
+      "text": "Haha, you bet! I'm high up here! Both physically and spiritually.",
+      "portrait": "HippieSpring"
+    },
+    {
+      "speaker": "Jumpy",
+      "text": "No, that's not what I meant... Ah, never mind.",
+      "portrait": "Jumpy"
+    },
+    {
+      "speaker": "HippieSpring",
+      "text": "Dude, I'm so high I can see you bouncing from up here!",
+      "portrait": "HippieSpring"
+    },
+    {
+      "speaker": "Jumpy",
+      "text": "No, no, it's not what you think. WiseSpring cursed me! Now I can't stop jumping.",
+      "portrait": "Jumpy"
+    },
+    {
+      "speaker": "HippieSpring",
+      "text": "Oh, bummer, dude! But hey, at least you'll never hit rock bottom, right?",
+      "portrait": "HippieSpring"
+    },
+    {
+      "speaker": "Jumpy",
+      "text": "Yeah, sure... Thanks, I guess?",
+      "portrait": "Jumpy"
+    }
+  ]
+}

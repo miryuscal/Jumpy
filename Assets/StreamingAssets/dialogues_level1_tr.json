@@ -1,0 +1,44 @@
+{
+  "dialogues": [
+    {
+      "speaker": "HippieSpring",
+      "text": "Hey, küçük zıplayan dostum! Nereye böyle koşturuyorsun?",
+      "portrait": "HippieSpring"
+    },
+    {
+      "speaker": "Jumpy",
+      "text": "Şey... Galiba uçuyorsun.",
+      "portrait": "Jumpy"
+    },
+    {
+      "speaker": "HippieSpring",
+      "text": "Ahaha, kesinlikle! Hem fiziksel hem de ruhsal olarak uçuyorum!",
+      "portrait": "HippieSpring"
+    },
+    {
+      "speaker": "Jumpy",
+      "text": "Hayır, demek istediğim... Boşver, neyse.",
+      "portrait": "Jumpy"
+    },
+    {
+      "speaker": "HippieSpring",
+      "text": "Kanka, o kadar uçmusum ki seni buradan zıplarken görebiliyorum!",
+      "portrait": "HippieSpring"
+    },
+    {
+      "speaker": "Jumpy",
+      "text": "Hayır, hayır, öyle değil. WiseSpring beni lanetledi! Artık durmadan zıplıyorum.",
+      "portrait": "Jumpy"
+    },
+    {
+      "speaker": "HippieSpring",
+      "text": "Ooo, kötü olmuş be dostum! Ama bak, en azından dip yapmazsın, değil mi?",
+      "portrait": "HippieSpring"
+    },
+    {
+      "speaker": "Jumpy",
+      "text": "Evet... Teşekkur ederim, sanırım.",
+      "portrait": "Jumpy"
+    }
+  ]
+}
