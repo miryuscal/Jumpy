@@ -27,7 +27,7 @@ public class SpringCharacterController : MonoBehaviour
     public DialogueLoader dialogueLoader;
     public string currentLevelKey = "level1";
 
-    private int currentLevel = 1;
+    public int currentLevel = 1;
     private bool dialogueTriggered = false;
 
     public AudioClip jumpClip;

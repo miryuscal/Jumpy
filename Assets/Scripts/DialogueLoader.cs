@@ -27,6 +27,7 @@ public class DialogueLoader : MonoBehaviour
     public Sprite wiseSpringPortrait;
     public Sprite jumpyPortrait;
     public Sprite hippieSpringPortrait;
+    public Sprite rapperSpringPortrait;
 
     private Dictionary<string, Sprite> portraitMap;
 
@@ -37,7 +38,8 @@ public class DialogueLoader : MonoBehaviour
         {
             { "WiseSpring", wiseSpringPortrait },
             { "Jumpy", jumpyPortrait },
-            { "HippieSpring", hippieSpringPortrait }
+            { "HippieSpring", hippieSpringPortrait },
+            { "RapperSpring", rapperSpringPortrait }
         };
     }
 

@@ -1,0 +1,44 @@
+{
+  "dialogues": [
+    {
+      "speaker": "Jumpy",
+      "text": "Şapkan çok güzelmiş! Nereden aldın?",
+      "portrait": "Jumpy"
+    },
+    {
+      "speaker": "RapperSpring",
+      "text": "Yo! Bu şapka stilin en iyisi, kafamda taşırım her zaman en kalitelisini!",
+      "portrait": "RapperSpring"
+    },
+    {
+      "speaker": "Jumpy",
+      "text": "Güzel kafiye! Her zaman böyle kafiyeli mi konuşuyorsun?",
+      "portrait": "Jumpy"
+    },
+    {
+      "speaker": "RapperSpring",
+      "text": "Evet, duyduğum her ses, gördüğüm her nesne, rap'lerimle döner söze!",
+      "portrait": "RapperSpring"
+    },
+    {
+      "speaker": "Jumpy",
+      "text": "Hadi bakalım, benim hakkımda da rap yapabilir misin?",
+      "portrait": "Jumpy"
+    },
+    {
+      "speaker": "RapperSpring",
+      "text": "Yo, zıplıyor musun, düşüyor musun, lanet peşini bırakmıyor, görüyor musun? Söyle Jumpy, yay olmak zor mu, yoksa sen mi beceremiyorsun?",
+      "portrait": "RapperSpring"
+    },
+    {
+      "speaker": "Jumpy",
+      "text": "Bu sert oldu dostum...",
+      "portrait": "Jumpy"
+    },
+    {
+      "speaker": "RapperSpring",
+      "text": "Benim rap’im serttir ama merttir, lanetler gibi yayların da başına derttir!",
+      "portrait": "RapperSpring"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "dialogues": [
+    {
+      "speaker": "Jumpy",
+      "text": "I love your hat! Where did you get it?",
+      "portrait": "Jumpy"
+    },
+    {
+      "speaker": "RapperSpring",
+      "text": "Yo! This hat is top-tier style, I wear the best with flair and guile!",
+      "portrait": "RapperSpring"
+    },
+    {
+      "speaker": "Jumpy",
+      "text": "Nice rhyme! Do you always talk like that?",
+      "portrait": "Jumpy"
+    },
+    {
+      "speaker": "RapperSpring",
+      "text": "Yeah, every sound I hear, every sight I see, it all turns to rhymes when it flows from me!",
+      "portrait": "RapperSpring"
+    },
+    {
+      "speaker": "Jumpy",
+      "text": "Alright, can you make a rap about me?",
+      "portrait": "Jumpy"
+    },
+    {
+      "speaker": "RapperSpring",
+      "text": "Yo, are you jumping or falling? Your curse keeps calling! Tell me, Jumpy, is being a spring so tough, or are you just stalling?",
+      "portrait": "RapperSpring"
+    },
+    {
+      "speaker": "Jumpy",
+      "text": "That was harsh, dude...",
+      "portrait": "Jumpy"
+    },
+    {
+      "speaker": "RapperSpring",
+      "text": "My rap’s sharp and tight, it hits with full might. Like a curse on a spring, it clings day and night!",
+      "portrait": "RapperSpring"
+    }
+  ]
+}
