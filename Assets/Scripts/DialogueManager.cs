@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using TMPro;
 
@@ -24,6 +25,9 @@ public class DialogueManager : MonoBehaviour
 
     public AudioClip[] letterSounds; // 33 Ses Dosyasý (A-Z + Bubble sound)
     public AudioSource audioSource; // Ses oynatýcý
+
+    public GameObject transitionPrefab; // Geçiþ animasyonu prefab
+    public float delayBeforeTransition = 2f; // Geçiþ öncesi bekleme süresi
 
     private List<Dialogue> dialogues;
     private int currentIndex;
@@ -81,6 +85,7 @@ public class DialogueManager : MonoBehaviour
             else
             {
                 ShowDialogueBox(false); // Diyalog bitince diyalog kutusunu kapat
+                StartCoroutine(HandleEndOfDialogue());
             }
         }
     }
@@ -92,7 +97,7 @@ public class DialogueManager : MonoBehaviour
 
     void Update()
     {
-        if((pauseMenu.activeSelf == false && optionsMenu.activeSelf == false))
+        if ((pauseMenu.activeSelf == false && optionsMenu.activeSelf == false))
         {
             // Ekrana týklama veya bir tuþa basma ile sonraki diyaloga geç
             if (Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.Joystick1Button0))
@@ -100,7 +105,6 @@ public class DialogueManager : MonoBehaviour
                 OnNextDialogue();
             }
         }
-       
     }
 
     private void PlayLetterSound(char letter)
@@ -121,7 +125,6 @@ public class DialogueManager : MonoBehaviour
 
     private int GetLetterIndex(char letter)
     {
-        // Harf sýrasýný belirle (A-Z, Ç, Þ, Ü vb.)
         switch (letter)
         {
             case 'A': return 0;
@@ -158,5 +161,29 @@ public class DialogueManager : MonoBehaviour
             case 'Z': return 31;
             default: return -1; // Eþleþme yoksa -1 döndür
         }
+    }
+
+    private IEnumerator HandleEndOfDialogue()
+    {
+        // Diyalog paneli kapandýktan sonra bir süre bekle
+        yield return new WaitForSeconds(delayBeforeTransition);
+
+        // Geçiþ animasyonu oynat
+        Camera mainCamera = Camera.main;
+        Vector3 screenCenter = new Vector3(Screen.width / 2, Screen.height / 2, 0);
+        Vector3 worldCenter = mainCamera.ScreenToWorldPoint(screenCenter);
+        worldCenter.z = 0;
+
+        GameObject transitionInstance = Instantiate(transitionPrefab, worldCenter, Quaternion.identity);
+        Animator animator = transitionInstance.GetComponent<Animator>();
+
+        if (animator != null)
+        {
+            float animationLength = animator.GetCurrentAnimatorStateInfo(0).length;
+            yield return new WaitForSeconds(animationLength);
+        }
+
+        // Bir sonraki sahneye geç
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }

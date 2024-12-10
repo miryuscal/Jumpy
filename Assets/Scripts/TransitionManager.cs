@@ -42,12 +42,15 @@ public class TransitionManager : MonoBehaviour
         // Belirtilen süreyi bekle
         yield return new WaitForSeconds(delayBeforeStart);
 
-        // Animasyonu baþlat
+        // Ses efektini çal
         audioSource.PlayOneShot(transitionSound);
-        animator.Play("YourAnimationName"); // Yerine animasyonunuzun adýný yazýn
-        
+
+        // Animator'daki Trigger'ý tetikle
+        animator.SetTrigger("StartAnimation");
+
         // Animasyonun uzunluðunu al
-        float animationLength = animator.GetCurrentAnimatorStateInfo(0).length;
+        AnimatorStateInfo animationState = animator.GetCurrentAnimatorStateInfo(0);
+        float animationLength = animationState.length;
 
         // Animasyonun bitmesini bekle
         yield return new WaitForSeconds(animationLength);
