@@ -5,6 +5,7 @@ using UnityEngine;
 public class CloudMovement : MonoBehaviour
 {
 
+    public float speed;
     public bool movement = false; 
 
 
@@ -18,7 +19,7 @@ public class CloudMovement : MonoBehaviour
     {
         if(movement == false)
         {
-            transform.position += new Vector3(0.1f * Time.deltaTime, 0, 0);
+            transform.position += new Vector3(speed * Time.deltaTime, 0, 0);
 
         }
 

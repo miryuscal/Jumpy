@@ -53,10 +53,8 @@ public class PauseMenu : MonoBehaviour
 
     public void LoadMainMenu()
     {
-        // Ana menüye git
-        //Time.timeScale = 1f; // Zamaný sýfýrlar
-        // Yorum olarak býraktým; ana menü sahnesini eklediðinizde buraya sahne adý veya indexi yazabilirsiniz.
-        // SceneManager.LoadScene("MainMenu"); 
+        Time.timeScale = 1f;
+        SceneManager.LoadScene(0); 
     }
 
     public void OpenOptionsMenu()

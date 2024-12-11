@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
@@ -27,10 +28,28 @@ public class OptionsMenu : MonoBehaviour
     public GameObject firstOptionsButton; // Options menüsündeki ilk seçilecek buton
     public GameObject firstPauseButton;
 
-    public string language_options;
+    public string language_options; // Dil seçimi deðiþkeni
+
+    // Ana menüden açýlýþ için
+    public bool openDirectly = false;
+
+    public RectTransform uiElement; // Hareket ettirilecek UI elementi
+    public Vector2 targetPosition;  // UI elementinin ulaþmasýný istediðiniz pozisyon
+    public Vector2 targetPositionTwo;
+    public float moveDuration = 1f; // Hareket süresi
+
+    private Vector2 initialPosition; // Baþlangýç pozisyonu
+
+    private bool closing = false;
+
+    public GameObject buttonplaceholder;
+
+
+ 
 
     private void Start()
     {
+        initialPosition = uiElement.anchoredPosition;
         LoadSettings(); // Kaydedilmiþ ayarlarý yükle
 
         // Baþlangýç ayarlarý
@@ -44,6 +63,12 @@ public class OptionsMenu : MonoBehaviour
         OnLanguageChanged(languageSlider.value);  // Dil ayarýný güncelle
         OnEffectsVolumeChanged(effectsSlider.value); // Ses efektleri seviyesini ayarla
         OnMusicVolumeChanged(musicSlider.value);   // Müzik seviyesini ayarla
+
+        // Eðer doðrudan açýlma isteði varsa
+        if (openDirectly)
+        {
+            OpenOptionsDirectly();
+        }
     }
 
     private void Update()
@@ -61,6 +86,15 @@ public class OptionsMenu : MonoBehaviour
         {
             language_options = "en";
         }
+    }
+
+    // Options panelini doðrudan aç
+    public void OpenOptionsDirectly()
+    {
+        optionsMenu.SetActive(true);
+        SelectButton(firstOptionsButton); // Ýlk butonu seç
+        StartCoroutine(MoveToPosition(targetPosition, moveDuration));
+
     }
 
     // Checkbox deðiþtiðinde butonlarý görünür/görünmez yap
@@ -150,4 +184,58 @@ public class OptionsMenu : MonoBehaviour
             musicSource.volume = musicSlider.value;
         }
     }
+
+    public void CloseOptionsMenu()
+    {
+        StartCoroutine(CloseAndDisable(targetPositionTwo, moveDuration));
+        closing = true;
+        
+    }
+
+
+    private IEnumerator MoveToPosition(Vector2 target, float duration)
+    {
+        float elapsed = 0f; // Geçen süreyi takip et
+
+        while (elapsed < duration)
+        {
+            // Geçen süre oranýna göre pozisyonu hesapla
+            uiElement.anchoredPosition = Vector2.Lerp(initialPosition, target, elapsed / duration);
+
+            // Zamaný güncelle
+            elapsed += Time.deltaTime;
+            yield return null;
+        }
+
+        // Son pozisyona yerleþtir
+        uiElement.anchoredPosition = target;
+
+        
+
+    }
+
+    private IEnumerator CloseAndDisable(Vector2 target, float duration)
+    {
+        // Baþlangýç pozisyonunu güncelle
+        initialPosition = uiElement.anchoredPosition;
+
+        float elapsed = 0f; // Geçen süreyi takip et
+
+        // Pozisyonu hedefe doðru yavaþça taþý
+        while (elapsed < duration)
+        {
+            uiElement.anchoredPosition = Vector2.Lerp(initialPosition, target, elapsed / duration);
+
+            elapsed += Time.deltaTime;
+            yield return null;
+        }
+
+        // Son pozisyona yerleþtir
+        uiElement.anchoredPosition = target;
+
+        // Elementi devre dýþý býrak
+        uiElement.gameObject.SetActive(false);
+        SelectButton(buttonplaceholder); 
+    }
+
 }

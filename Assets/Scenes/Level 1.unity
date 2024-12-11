@@ -7897,66 +7897,17 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &341510222
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 341510224}
-  - component: {fileID: 341510223}
-  m_Layer: 0
-  m_Name: OptionsMenuManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &341510223
+--- !u!114 &341510223 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 7848507755085898317, guid: bab9e088ebcf298448ad444f9602442e, type: 3}
+  m_PrefabInstance: {fileID: 7409033666418849470}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 341510222}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 11cc6d7deab2a0449a7faf97c02e0184, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttonToggle: {fileID: 1053633443}
-  button1: {fileID: 1165162653}
-  button2: {fileID: 1706546413}
-  languageSlider: {fileID: 214384703}
-  flagImage: {fileID: 1975168924}
-  turkishFlag: {fileID: 21300000, guid: d1d323f98c4d63c4b84ac23f3b3f97ec, type: 3}
-  englishFlag: {fileID: 21300000, guid: dc7ec607333e53a4c821138d98736582, type: 3}
-  effectsSource: {fileID: 2055187575}
-  musicSource: {fileID: 1341740926}
-  effectsSlider: {fileID: 136589647}
-  musicSlider: {fileID: 1914509388}
-  pauseMenu: {fileID: 2080950072}
-  optionsMenu: {fileID: 777345487}
-  firstOptionsButton: {fileID: 114293829}
-  firstPauseButton: {fileID: 837066607}
-  language_options: 
---- !u!4 &341510224
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 341510222}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1129.5868, y: 678.5505, z: -8.823705}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &344444376
 GameObject:
   m_ObjectHideFlags: 0
@@ -50036,7 +49987,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -128, y: 135}
+  m_AnchoredPosition: {x: -113, y: 135}
   m_SizeDelta: {x: 160, y: 160}
   m_Pivot: {x: 1, y: 0}
 --- !u!114 &1706546415
@@ -59735,6 +59686,115 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2128d75b4c558a149824059058f77a1f, type: 3}
+--- !u!1001 &7409033666418849470
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4732884990691401053, guid: bab9e088ebcf298448ad444f9602442e, type: 3}
+      propertyPath: m_Name
+      value: OptionsMenuManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 5742998109556739796, guid: bab9e088ebcf298448ad444f9602442e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1129.5868
+      objectReference: {fileID: 0}
+    - target: {fileID: 5742998109556739796, guid: bab9e088ebcf298448ad444f9602442e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 678.5505
+      objectReference: {fileID: 0}
+    - target: {fileID: 5742998109556739796, guid: bab9e088ebcf298448ad444f9602442e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -8.823705
+      objectReference: {fileID: 0}
+    - target: {fileID: 5742998109556739796, guid: bab9e088ebcf298448ad444f9602442e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5742998109556739796, guid: bab9e088ebcf298448ad444f9602442e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5742998109556739796, guid: bab9e088ebcf298448ad444f9602442e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5742998109556739796, guid: bab9e088ebcf298448ad444f9602442e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5742998109556739796, guid: bab9e088ebcf298448ad444f9602442e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5742998109556739796, guid: bab9e088ebcf298448ad444f9602442e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5742998109556739796, guid: bab9e088ebcf298448ad444f9602442e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7848507755085898317, guid: bab9e088ebcf298448ad444f9602442e, type: 3}
+      propertyPath: button1
+      value: 
+      objectReference: {fileID: 1165162653}
+    - target: {fileID: 7848507755085898317, guid: bab9e088ebcf298448ad444f9602442e, type: 3}
+      propertyPath: button2
+      value: 
+      objectReference: {fileID: 1706546413}
+    - target: {fileID: 7848507755085898317, guid: bab9e088ebcf298448ad444f9602442e, type: 3}
+      propertyPath: flagImage
+      value: 
+      objectReference: {fileID: 1975168924}
+    - target: {fileID: 7848507755085898317, guid: bab9e088ebcf298448ad444f9602442e, type: 3}
+      propertyPath: pauseMenu
+      value: 
+      objectReference: {fileID: 2080950072}
+    - target: {fileID: 7848507755085898317, guid: bab9e088ebcf298448ad444f9602442e, type: 3}
+      propertyPath: musicSlider
+      value: 
+      objectReference: {fileID: 1914509388}
+    - target: {fileID: 7848507755085898317, guid: bab9e088ebcf298448ad444f9602442e, type: 3}
+      propertyPath: musicSource
+      value: 
+      objectReference: {fileID: 1341740926}
+    - target: {fileID: 7848507755085898317, guid: bab9e088ebcf298448ad444f9602442e, type: 3}
+      propertyPath: optionsMenu
+      value: 
+      objectReference: {fileID: 777345487}
+    - target: {fileID: 7848507755085898317, guid: bab9e088ebcf298448ad444f9602442e, type: 3}
+      propertyPath: buttonToggle
+      value: 
+      objectReference: {fileID: 1053633443}
+    - target: {fileID: 7848507755085898317, guid: bab9e088ebcf298448ad444f9602442e, type: 3}
+      propertyPath: effectsSlider
+      value: 
+      objectReference: {fileID: 136589647}
+    - target: {fileID: 7848507755085898317, guid: bab9e088ebcf298448ad444f9602442e, type: 3}
+      propertyPath: effectsSource
+      value: 
+      objectReference: {fileID: 2055187575}
+    - target: {fileID: 7848507755085898317, guid: bab9e088ebcf298448ad444f9602442e, type: 3}
+      propertyPath: languageSlider
+      value: 
+      objectReference: {fileID: 214384703}
+    - target: {fileID: 7848507755085898317, guid: bab9e088ebcf298448ad444f9602442e, type: 3}
+      propertyPath: firstPauseButton
+      value: 
+      objectReference: {fileID: 837066607}
+    - target: {fileID: 7848507755085898317, guid: bab9e088ebcf298448ad444f9602442e, type: 3}
+      propertyPath: firstOptionsButton
+      value: 
+      objectReference: {fileID: 114293829}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: bab9e088ebcf298448ad444f9602442e, type: 3}
 --- !u!1001 &8002128799595477433
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -60026,7 +60086,7 @@ SceneRoots:
   - {fileID: 1825267951}
   - {fileID: 1341740925}
   - {fileID: 1748376493}
-  - {fileID: 341510224}
+  - {fileID: 7409033666418849470}
   - {fileID: 1172458581}
   - {fileID: 1418162894}
   - {fileID: 741078349}
