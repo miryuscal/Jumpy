@@ -9,10 +9,28 @@ EditorBuildSettings:
     path: Assets/Scenes/Main Menu ().unity
     guid: 0acf1d264f151534d88d27ea3362782a
   - enabled: 1
-    path: Assets/Scenes/Level 1.unity
+    path: Assets/Scenes/LevelSelect.unity
+    guid: 5e19fd2edbd63ba47af84ccf164448fd
+  - enabled: 1
+    path: Assets/Scenes/Level1.unity
     guid: 3fc8acdd13e6c734bafef6554d6fdbcd
   - enabled: 1
-    path: Assets/Scenes/Level 2.unity
+    path: Assets/Scenes/Level2.unity
     guid: 9f99c188217f440419babca758c31c83
+  - enabled: 1
+    path: Assets/Scenes/Level3.unity
+    guid: 3f03666848aec344585c3028428e7fac
+  - enabled: 1
+    path: Assets/Scenes/Level4.unity
+    guid: 23e63005cb37eaf49bb2fa686fa8bb06
+  - enabled: 1
+    path: Assets/Scenes/Level5.unity
+    guid: 7dbc0206da4d29640b9ca74437f4177d
+  - enabled: 1
+    path: Assets/Scenes/Level6.unity
+    guid: aef0a716b56ec8f439d414aa8e9f4bdd
+  - enabled: 1
+    path: Assets/Scenes/Level7.unity
+    guid: e220d61561a95ec42810a949e7d7604d
   m_configObjects:
     com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000, guid: a15a9c73c65b64b4aac63f6b93615247, type: 2}

@@ -183,7 +183,11 @@ public class DialogueManager : MonoBehaviour
             yield return new WaitForSeconds(animationLength);
         }
 
-        // Bir sonraki sahneye geç
+        // Tamamlanan seviyeyi bildir ve bir sonraki seviyeye geç
+        LevelSelectManager.UnlockNextLevel(SceneManager.GetActiveScene().name);
+
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }
+
+
